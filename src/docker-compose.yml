@@ -1,0 +1,9 @@
+services:
+  challenge-b:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./data.txt:/Users/abdulrahim/Desktop/projects/interview/kasagi_labo/src/input.txt
+      - ./output:/Users/abdulrahim/Desktop/projects/interview/kasagi_labo/src/output.txt
+    command: node challenge_2.js
